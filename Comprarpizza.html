@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freddy's Fazbear Pizzas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #6e1111;
+            color: #ffffff;
+            text-align: center;
+        }
+        header {
+            background-color: #831111a6;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: #ffffff;">Compra de Freddy's pizza</h1>
+
+    </header>
+            
+    
+    
+    <p>¡El lugar donde tus pesadillas cobran vida!</p>
+</body>
+</html>
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(175, 13, 13, 0.425);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(80, 79, 79, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: block;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px;
+            border: 1px solid #fcf7f7;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .button {
+            background-color: #28a745;
+            color: rgb(71, 71, 71);
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+        .button-back {
+            background-color: #6c757d;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .button-back:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+
+        <form action="/procesar_pedido" method="POST">
+            <!-- Tipo de Pizza -->
+            <label for="tipo">Tipo de Pizza:</label>
+            <select id="tipo" name="tipo" required>
+                <option value="margarita">Margarita</option>
+                <option value="pepperoni">Pepperoni</option>
+                <option value="vegetariana">Vegetariana</option>
+                <option value="cuatro_estaciones">Cuatro Quesos</option>
+                <option value="hawaiana">Hawaiana</option>
+                <option value="BBQ">BBQ</option> 
+
+            </select>
+
+            <!-- Tamaño -->
+            <label for="tamano">Tamaño:</label>
+            <select id="tamano" name="tamano" required>
+                <option value="pequena">Pequeña</option>
+                <option value="mediana">Mediana</option>
+                <option value="grande">Grande</option>
+            </select>
+
+            <!-- Información de contacto -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Tu número de teléfono" required>
+
+            <!-- Dirección -->
+            <label for="direccion">Dirección de entrega:</label>
+            <textarea id="direccion" name="direccion" placeholder="Tu dirección de entrega" required></textarea>
+
+            <!-- Botones -->
+            <button type="submit" class="button">Realizar Pedido</button>
+            <button type="button" class="button-back" onclick="window.history.back();">Volver atrás</button>
+        </form>
+    </div>
+
+</body>
+</html>
